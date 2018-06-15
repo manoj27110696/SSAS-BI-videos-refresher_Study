@@ -6,10 +6,83 @@
     <Name>SSAS BI videos refresher_Study.database</Name>
     <FullPath>SSAS BI videos refresher_Study.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Adventure Works DW2014.cube</Name>
+      <FullPath>Adventure Works DW2014.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Adventure Works DW2014.partitions</Name>
+          <FullPath>Adventure Works DW2014.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Dim Promotion.dim</Name>
+      <FullPath>Dim Promotion.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Date.dim</Name>
+      <FullPath>Dim Date.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Sales Territory.dim</Name>
+      <FullPath>Dim Sales Territory.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Customer.dim</Name>
+      <FullPath>Dim Customer.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Product.dim</Name>
+      <FullPath>Dim Product.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Currency.dim</Name>
+      <FullPath>Dim Currency.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Geography.dim</Name>
+      <FullPath>Dim Geography.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Adventure Works DW2014.ds</Name>
+      <FullPath>Adventure Works DW2014.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Adventure Works DW2014.dsv</Name>
+      <FullPath>Adventure Works DW2014.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Adventure Works DW2014 MultipleFacts.dsv</Name>
+      <FullPath>Adventure Works DW2014 MultipleFacts.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Adventure Works DW2014</Id>
+            <Name>Adventure Works DW2014</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=.;Integrated Security=SSPI;Initial Catalog=AdventureWorksDW2014</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Adventure Works DW2014</Id>
+            <Name>Adventure Works DW2014</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
