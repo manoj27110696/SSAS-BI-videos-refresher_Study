@@ -47,6 +47,14 @@
       <Name>Dim Geography.dim</Name>
       <FullPath>Dim Geography.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Reseller.dim</Name>
+      <FullPath>Dim Reseller.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Employee.dim</Name>
+      <FullPath>Dim Employee.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
@@ -58,10 +66,6 @@
     <ProjectItem>
       <Name>Adventure Works DW2014.dsv</Name>
       <FullPath>Adventure Works DW2014.dsv</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Adventure Works DW2014 MultipleFacts.dsv</Name>
-      <FullPath>Adventure Works DW2014 MultipleFacts.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Configurations>
