@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="190" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-11275" scrolltop="-4753" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="29025" y="13467" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="190" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-11275" scrolltop="10589" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="29025" y="13467" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -1130,7 +1130,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-4753</Value>
+      <Value>10589</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -1452,8 +1452,8 @@
     <Perspective dwd:design-time-name="1303c46d-0a7e-49b1-8322-755a6d92d518">
       <ID>Perspective</ID>
       <Name>Internet Sales</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
       <Dimensions>
         <Dimension dwd:design-time-name="30aec53e-134d-4344-bfaa-9173c84028cf">
           <CubeDimensionID>Dim Promotion</CubeDimensionID>
@@ -1709,12 +1709,20 @@
           </Measures>
         </MeasureGroup>
       </MeasureGroups>
+      <Actions>
+        <Action dwd:design-time-name="0e107f1d-806d-4669-ba4e-834ac72fb072">
+          <ActionID>Drillthrough Action</ActionID>
+        </Action>
+        <Action dwd:design-time-name="33d62840-e0f9-4d3c-826e-a9d4299a8c8a">
+          <ActionID>Action</ActionID>
+        </Action>
+      </Actions>
     </Perspective>
     <Perspective dwd:design-time-name="ee0ab2c4-15d1-4eac-b7b1-2a9f1fafc9d3">
       <ID>Perspective 1</ID>
       <Name>Reseller Sales</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
       <Dimensions>
         <Dimension dwd:design-time-name="2609085a-b917-4571-9955-252ab4236b8a">
           <CubeDimensionID>Dim Promotion</CubeDimensionID>
@@ -2019,6 +2027,14 @@
           </Measures>
         </MeasureGroup>
       </MeasureGroups>
+      <Actions>
+        <Action dwd:design-time-name="94eb3732-8f62-4dd0-988c-737dcb11952f">
+          <ActionID>Drillthrough Action 1</ActionID>
+        </Action>
+        <Action dwd:design-time-name="d64e4400-b6d2-4e40-ae02-c1e32d578abf">
+          <ActionID>Action</ActionID>
+        </Action>
+      </Actions>
     </Perspective>
   </Perspectives>
   <MeasureGroups>
@@ -2029,6 +2045,16 @@
       <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
       <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
       <State>Unprocessed</State>
+      <Translations>
+        <Translation dwd:design-time-name="733d35cf-5783-4437-a309-4dcfdeea22fb">
+          <Language>1036</Language>
+          <Caption>les ventes sur internet</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="c3f9403e-9717-4712-8977-2bc996a5384d">
+          <Language>3082</Language>
+          <Caption>ventas de internet de hecho</Caption>
+        </Translation>
+      </Translations>
       <Measures>
         <Measure dwd:design-time-name="f29b0d9c-7dad-44e5-9907-d0d645d19942">
           <ID>Revision Number</ID>
@@ -2787,6 +2813,14 @@
           <MeasureID>Sales Amount - Fact Reseller Sales</MeasureID>
         </Column>
       </Columns>
+    </Action>
+    <Action xsi:type="StandardAction" dwd:design-time-name="bcd943a3-e9c2-4a08-965c-46bdca6d9bdd">
+      <ID>Action</ID>
+      <Name>WebsiteRedirectAmazonSSAS</Name>
+      <TargetType>LevelMembers</TargetType>
+      <Target>[Dim Geography].[Geography].[Country]</Target>
+      <Type>Url</Type>
+      <Expression>"https://www.amazon.com/"</Expression>
     </Action>
   </Actions>
 </Cube>
