@@ -6,14 +6,33 @@
       <Partitions>
         <Partition dwd:design-time-name="4e2ca4a4-e3ed-4af0-bddf-37eaa061d1d2">
           <ID>Fact Internet Sales</ID>
-          <Name>Fact Internet Sales</Name>
+          <Name>Fact Internet Sales before 2008</Name>
           <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f5331245-aad3-4661-93f9-27e3a699942e">
-            <DataSourceViewID>Adventure Works DW2014</DataSourceViewID>
-            <TableID>dbo_FactInternetSales</TableID>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="fad867ed-27f9-4170-b869-9b799d0fecf6">
+            <DataSourceID>Adventure Works DW2014</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactInternetSales].[ProductKey],[dbo].[FactInternetSales].[OrderDateKey],[dbo].[FactInternetSales].[DueDateKey],[dbo].[FactInternetSales].[ShipDateKey],[dbo].[FactInternetSales].[CustomerKey],[dbo].[FactInternetSales].[PromotionKey],[dbo].[FactInternetSales].[CurrencyKey],[dbo].[FactInternetSales].[SalesTerritoryKey],[dbo].[FactInternetSales].[SalesOrderNumber],[dbo].[FactInternetSales].[SalesOrderLineNumber],[dbo].[FactInternetSales].[RevisionNumber],[dbo].[FactInternetSales].[OrderQuantity],[dbo].[FactInternetSales].[UnitPrice],[dbo].[FactInternetSales].[ExtendedAmount],[dbo].[FactInternetSales].[UnitPriceDiscountPct],[dbo].[FactInternetSales].[DiscountAmount],[dbo].[FactInternetSales].[ProductStandardCost],[dbo].[FactInternetSales].[TotalProductCost],[dbo].[FactInternetSales].[SalesAmount],[dbo].[FactInternetSales].[TaxAmt],[dbo].[FactInternetSales].[Freight],[dbo].[FactInternetSales].[CarrierTrackingNumber],[dbo].[FactInternetSales].[CustomerPONumber],[dbo].[FactInternetSales].[OrderDate],[dbo].[FactInternetSales].[DueDate],[dbo].[FactInternetSales].[ShipDate]
+FROM [dbo].[FactInternetSales]
+WHERE [dbo].[FactInternetSales].[OrderDateKey]&lt;20130101</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="04853f0f-5d06-41e2-8fe0-2989b8ecc34e">
+          <ID>Fact Internet Sales 1</ID>
+          <Name>Fact Internet Sales</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="2c59b045-cfdf-4370-ba54-0bcfb405d5ea">
+            <DataSourceID>Adventure Works DW2014</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactInternetSales].[ProductKey],[dbo].[FactInternetSales].[OrderDateKey],[dbo].[FactInternetSales].[DueDateKey],[dbo].[FactInternetSales].[ShipDateKey],[dbo].[FactInternetSales].[CustomerKey],[dbo].[FactInternetSales].[PromotionKey],[dbo].[FactInternetSales].[CurrencyKey],[dbo].[FactInternetSales].[SalesTerritoryKey],[dbo].[FactInternetSales].[SalesOrderNumber],[dbo].[FactInternetSales].[SalesOrderLineNumber],[dbo].[FactInternetSales].[RevisionNumber],[dbo].[FactInternetSales].[OrderQuantity],[dbo].[FactInternetSales].[UnitPrice],[dbo].[FactInternetSales].[ExtendedAmount],[dbo].[FactInternetSales].[UnitPriceDiscountPct],[dbo].[FactInternetSales].[DiscountAmount],[dbo].[FactInternetSales].[ProductStandardCost],[dbo].[FactInternetSales].[TotalProductCost],[dbo].[FactInternetSales].[SalesAmount],[dbo].[FactInternetSales].[TaxAmt],[dbo].[FactInternetSales].[Freight],[dbo].[FactInternetSales].[CarrierTrackingNumber],[dbo].[FactInternetSales].[CustomerPONumber],[dbo].[FactInternetSales].[OrderDate],[dbo].[FactInternetSales].[DueDate],[dbo].[FactInternetSales].[ShipDate]
+FROM [dbo].[FactInternetSales]
+WHERE  [dbo].[FactInternetSales].[OrderDateKey]&gt;=20130101</QueryDefinition>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
@@ -26,14 +45,56 @@
       <Partitions>
         <Partition dwd:design-time-name="f0080060-57bb-42a7-8c36-bd1c6a7da3e2">
           <ID>Fact Reseller Sales</ID>
-          <Name>Fact Reseller Sales</Name>
+          <Name>Fact Reseller Sales2011</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="9d10263b-990c-489b-813c-0819c49bb88f">
+            <DataSourceID>Adventure Works DW2014</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactResellerSales].[ProductKey],[dbo].[FactResellerSales].[OrderDateKey],[dbo].[FactResellerSales].[DueDateKey],[dbo].[FactResellerSales].[ShipDateKey],[dbo].[FactResellerSales].[ResellerKey],[dbo].[FactResellerSales].[EmployeeKey],[dbo].[FactResellerSales].[PromotionKey],[dbo].[FactResellerSales].[CurrencyKey],[dbo].[FactResellerSales].[SalesTerritoryKey],[dbo].[FactResellerSales].[SalesOrderNumber],[dbo].[FactResellerSales].[SalesOrderLineNumber],[dbo].[FactResellerSales].[RevisionNumber],[dbo].[FactResellerSales].[OrderQuantity],[dbo].[FactResellerSales].[UnitPrice],[dbo].[FactResellerSales].[ExtendedAmount],[dbo].[FactResellerSales].[UnitPriceDiscountPct],[dbo].[FactResellerSales].[DiscountAmount],[dbo].[FactResellerSales].[ProductStandardCost],[dbo].[FactResellerSales].[TotalProductCost],[dbo].[FactResellerSales].[SalesAmount],[dbo].[FactResellerSales].[TaxAmt],[dbo].[FactResellerSales].[Freight],[dbo].[FactResellerSales].[CarrierTrackingNumber],[dbo].[FactResellerSales].[CustomerPONumber],[dbo].[FactResellerSales].[OrderDate],[dbo].[FactResellerSales].[DueDate],[dbo].[FactResellerSales].[ShipDate]
+FROM [dbo].[FactResellerSales]
+WHERE [dbo].[FactResellerSales].[OrderDateKey] BETWEEN 20110101 AND 20111231</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="61e87ef2-0af1-4636-be66-cc6edbd09013">
+          <ID>Fact Reseller Sales 2010</ID>
+          <Name>Fact Reseller Sales 2010</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f5fb1462-e5d8-4bb1-b688-54979aba0e06">
-            <DataSourceViewID>Adventure Works DW2014</DataSourceViewID>
-            <TableID>dbo_FactResellerSales</TableID>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="1095f47e-76f0-486b-8901-e4f76b3789a9">
+            <DataSourceID>Adventure Works DW2014</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactResellerSales].[ProductKey],[dbo].[FactResellerSales].[OrderDateKey],[dbo].[FactResellerSales].[DueDateKey],[dbo].[FactResellerSales].[ShipDateKey],[dbo].[FactResellerSales].[ResellerKey],[dbo].[FactResellerSales].[EmployeeKey],[dbo].[FactResellerSales].[PromotionKey],[dbo].[FactResellerSales].[CurrencyKey],[dbo].[FactResellerSales].[SalesTerritoryKey],[dbo].[FactResellerSales].[SalesOrderNumber],[dbo].[FactResellerSales].[SalesOrderLineNumber],[dbo].[FactResellerSales].[RevisionNumber],[dbo].[FactResellerSales].[OrderQuantity],[dbo].[FactResellerSales].[UnitPrice],[dbo].[FactResellerSales].[ExtendedAmount],[dbo].[FactResellerSales].[UnitPriceDiscountPct],[dbo].[FactResellerSales].[DiscountAmount],[dbo].[FactResellerSales].[ProductStandardCost],[dbo].[FactResellerSales].[TotalProductCost],[dbo].[FactResellerSales].[SalesAmount],[dbo].[FactResellerSales].[TaxAmt],[dbo].[FactResellerSales].[Freight],[dbo].[FactResellerSales].[CarrierTrackingNumber],[dbo].[FactResellerSales].[CustomerPONumber],[dbo].[FactResellerSales].[OrderDate],[dbo].[FactResellerSales].[DueDate],[dbo].[FactResellerSales].[ShipDate]
+FROM [dbo].[FactResellerSales]
+WHERE [dbo].[FactResellerSales].[OrderDateKey] BETWEEN 20100101 AND 20101231</QueryDefinition>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="b419f448-4907-4e6d-a5eb-dec9866699c9">
+          <ID>Fact Reseller Sales 1</ID>
+          <Name>Fact Reseller Sales Beyond 2011</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <Annotations>
+            <Annotation>
+              <Name>AggregationPercent</Name>
+              <Value></Value>
+            </Annotation>
+          </Annotations>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="QueryBinding" dwd:design-time-name="905eb28c-92c4-4036-9f55-a0b3f2955f3a">
+            <DataSourceID>Adventure Works DW2014</DataSourceID>
+            <QueryDefinition>SELECT [dbo].[FactResellerSales].[ProductKey],[dbo].[FactResellerSales].[OrderDateKey],[dbo].[FactResellerSales].[DueDateKey],[dbo].[FactResellerSales].[ShipDateKey],[dbo].[FactResellerSales].[ResellerKey],[dbo].[FactResellerSales].[EmployeeKey],[dbo].[FactResellerSales].[PromotionKey],[dbo].[FactResellerSales].[CurrencyKey],[dbo].[FactResellerSales].[SalesTerritoryKey],[dbo].[FactResellerSales].[SalesOrderNumber],[dbo].[FactResellerSales].[SalesOrderLineNumber],[dbo].[FactResellerSales].[RevisionNumber],[dbo].[FactResellerSales].[OrderQuantity],[dbo].[FactResellerSales].[UnitPrice],[dbo].[FactResellerSales].[ExtendedAmount],[dbo].[FactResellerSales].[UnitPriceDiscountPct],[dbo].[FactResellerSales].[DiscountAmount],[dbo].[FactResellerSales].[ProductStandardCost],[dbo].[FactResellerSales].[TotalProductCost],[dbo].[FactResellerSales].[SalesAmount],[dbo].[FactResellerSales].[TaxAmt],[dbo].[FactResellerSales].[Freight],[dbo].[FactResellerSales].[CarrierTrackingNumber],[dbo].[FactResellerSales].[CustomerPONumber],[dbo].[FactResellerSales].[OrderDate],[dbo].[FactResellerSales].[DueDate],[dbo].[FactResellerSales].[ShipDate]
+FROM [dbo].[FactResellerSales]
+WHERE [dbo].[FactResellerSales].[OrderDateKey]&gt;20110131</QueryDefinition>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
